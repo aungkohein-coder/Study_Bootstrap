@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+            body{
+                height: 3000px;
+            }
+
+            .box{
+                height: 300px;
+            }
+
+            .box1{
+                position: absolute;
+                z-index: 3;
+            }
+
+            .box2{
+                position: absolute;
+                z-index: 2;
+                
+            }
+
+            .box3{
+                position: absolute;
+                z-index: 1;
+
+            }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <div class=" bg-warning  p-4 sticky-top"></div>
+    <div class="box border border-3 border-primary m-5">
+        <div class="bg-info p-3 box1"></div>
+        <div class="bg-warning p-4 box2"></div>
+        <div class="bg-danger p-5 box3"></div>
+    </div>
+
+    <div class=" bg-warning  p-4 position-fixed " style="width: 40px; right: 20px; bottom: 20px;"></div>
+    <hr>
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Min Ga Lar Par</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem debitis nobis beatae et aut natus totam dignissimos praesentium, dolor ab? Ratione itaque minima quis deleniti ipsa assumenda molestiae vero numquam.
+          <img src="images/001 (8).jpg" class=" w-100" style="width: 300px;" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
